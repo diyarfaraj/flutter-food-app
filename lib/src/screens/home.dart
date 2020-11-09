@@ -25,7 +25,7 @@ class _HomeState extends State<Home> {
                   ),
                 ),
                 Stack(
-                  children: [
+                  children: <Widget>[
                     IconButton(
                         icon: Icon(Icons.notifications_none), onPressed: () {}),
                     Positioned(
@@ -36,12 +36,26 @@ class _HomeState extends State<Home> {
                         width: 10,
                         decoration: BoxDecoration(
                           color: red,
+                          borderRadius: BorderRadius.circular(20),
                         ),
                       ),
                     ),
                   ],
                 )
               ],
+            ),
+            SizedBox(
+              height: 5,
+            ),
+            Container(
+              decoration: BoxDecoration(color: white, boxShadow: [
+                BoxShadow(color: grey, offset: Offset(1, 1), blurRadius: 4)
+              ]),
+              child: ListTile(
+                leading: Icon(Icons.search),
+                //https://www.youtube.com/watch?v=T5jwA3fvcHU&t=1245s&ab_channel=SantosEnoque
+                //Minut 22:00
+              ),
             )
           ],
         ),
